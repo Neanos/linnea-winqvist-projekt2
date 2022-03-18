@@ -1,18 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const userGrid = document.querySelector('.grid-user')
     const computerGrid = document.querySelector('.grid-computer')
     const displayGrid = document.querySelector('.grid-display')
     const ships = document.querySelector('.ship')
     const destroyer = document.querySelector('.destroyer-container')
     const submarine = document.querySelector('.submarine-container')
-    const crusier = document.querySelector('.crusier-container')
+    const cruiser = document.querySelector('.cruiser-container')
     const battleship = document.querySelector('.battleship-container')
     const carrier = document.querySelector('.carrier-container')
     const startButton = document.querySelector('#start')
+    const rotateButton = document.querySelector('#rotate')
+    const turnDisplay = document.querySelector('#whose-go')
     const infoDisplay = document.querySelector('#info')
+    const userSquares = []
+    const computerSquares = []
+    let isHorizontal = true
     let isGameOver = false
     let currentPlayer = 'user'
-    const width = 10
- 
     const width = 10
  
     function createBoard(grid, squares) {
@@ -23,7 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
            squares.push(square)
         }
     }
+    createBoard(userGrid, userSquares)
     createBoard(computerGrid, computerSquares)
+    
  
     const shipArray = [
         {

@@ -2,16 +2,26 @@
     display: flex;
 }
 
+.grid-user {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: seagreen;
+    margin: 20px;
+  }
+
 .grid div{
     width: 40px;
     height: 40px;
 }
+
 .grid-computer{
     width: 400px;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    background-color:lightgreen;
+    background-color:seagreen;
     margin: 20px;
 }
 
@@ -19,71 +29,117 @@
     width: 400px;
     height: 250px;
     margin: 20px;
-    background-color: yellow;
+    background-color:seagreen;
 }
 
 .destroyer-container{
     width: 80px;
     height: 40px;
-    background-color: orange;
+    background-color:lavender;
     margin: 10px;
     display: flex;
 }
+
+.destroyer-container-vertical {
+    width: 40px;
+    height: 80px;
+    background-color: lavender;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 .submarine-container{
     width: 120px;
     height: 40px;
-    background-color:pink;
+    background-color:lavender;
     margin: 10px;
     display: flex;
 }
+
+.submarine-container-vertical {
+    width: 40px;
+    height: 120px;
+    background-color: lavender;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 .crusier-container{
     width: 120px;
     height: 40px;
-    background-color: purple;
+    background-color:lavender;
     margin: 10px;
     display: flex;
 }
+
+.cruiser-container-vertical {
+    width: 40px;
+    height: 120px;
+    background-color: lavender;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 .battleship-container{
     width: 160px;
     height: 40px;
-    background-color: aqua;
+    background-color:lavender;
     margin: 10px;
     display: flex;
 }
 
+.battleship-container-vertical {
+    width: 40px;
+    height: 160px;
+    background-color: lavender;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 .carrier-container{
     width: 200px;
     height: 40px;
-    background-color: green;
+    background-color:lavender;
     margin: 10px;
     display: flex;
 }
+
+.carrier-container-vertical {
+    width: 40px;
+    height: 200px;
+    background-color: green;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
 .ship div{
     width: 40px;
     height: 40px;
 }
 
 .destroyer{
-    background-color: orange;
+    background-color: lavender;
 }
 
 .submarine{
-    background-color: pink;
+    background-color: lavender;
 }
 
 .crusier{
-    background-color: purple;
+    background-color: lavender;
 }
 
 .battleship{
-    background-color: aqua;
+    background-color: lavender;
 }
 
 .carrier{
-    background-color: green;
+    background-color: lavender;
 }
 
 .boom {
@@ -93,3 +149,4 @@
   .miss {
      background-color: black;
   }
+  
